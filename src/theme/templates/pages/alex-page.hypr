@@ -1,0 +1,9 @@
+{% extends "page" %}
+
+{% block body-content %}
+  <div id="alex-div">Loading...</div>
+  
+	{% dropzone "body" scope="page" %}
+  {% require_script 'pages/alex-page' %}
+{% endblock body-content %}
+

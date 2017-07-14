@@ -1,0 +1,19 @@
+{
+  "exports": [
+    {
+      "id": "embedded.platform.applications.install",
+      "virtualPath": "./dist/platform.applications.manifest.all.js",
+      "actionId": "embedded.platform.applications.install"
+    },
+    {
+      "id": "hello_custom_routing",
+      "virtualPath": "./dist/storefront.manifest.all.js",
+      "actionId": "http.storefront.routes"
+    },
+    {
+      "id": "read_configuration",
+      "virtualPath": "./dist/storefront.manifest.all.js",
+      "actionId": "http.storefront.routes"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     "isDesktop": true,
     "isMobile": false,
     "isTablet": false,
-    "name": "AlexTheme",
+    "name": "AlexTheme2",
     "allowProduction": true,
     "baseTheme": "https://github.com/mozu/core-theme.git",
     "baseThemeVersion": {
@@ -216,6 +216,14 @@
       "id": "blank-page",
       "template": "blank-page",
       "title": "Blank Page",
+      "userCreatable": true
+    },
+    {
+      "documentType": "web_page",
+      "entityType": "webpage",
+      "id": "alex-page",
+      "template": "alex-page",
+      "title": "Alex Page",
       "userCreatable": true
     },
     {
