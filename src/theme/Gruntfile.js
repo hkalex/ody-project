@@ -100,6 +100,10 @@ module.exports = function (grunt) {
             'quickcompile': {
                 'command': 'compile',
                 'opts': { 'skipminification': true }
+            },
+            'fullcompile': {
+                'command': 'compile',
+                'opts': { 'skipminification': false }
             }
         },
         watch: {
@@ -123,7 +127,7 @@ module.exports = function (grunt) {
                 'tasks': [
                     'newer:jshint:develop',
                     'mozutheme:quickcompile',
-                    'newer:mozusync:upload'
+                   'newer:mozusync:upload'
                 ]
             },
             'sync': {
@@ -170,7 +174,7 @@ module.exports = function (grunt) {
             },
             'del': {
                 'options': { 'action': 'delete' },
-                'src': '<%= mozusync.upload.src %>',
+               'src': '<%= mozusync.upload.src %>',
                 'remove': []
             },
             'wipe': {
@@ -182,7 +186,8 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'jshint:develop',
         'copy',
-        'mozutheme:quickcompile'
+        'mozutheme:quickcompile',
+        'compress'
     ]);
     grunt.registerTask('build-production', [
         'jshint:production',
@@ -195,7 +200,6 @@ module.exports = function (grunt) {
     ]);
     grunt.registerTask('default', [
         'build',
-        'watch:sync',
         'mozusync:upload',
         'mozutheme:check'
     ]);

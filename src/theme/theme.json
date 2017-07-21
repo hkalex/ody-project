@@ -21,6 +21,10 @@
       "path": "layout.js"
     },
     {
+      "id": "summernote",
+      "path": "summernote.js"
+    },
+    {
       "documentTypes": [
         "web_page@mozu"
       ],
@@ -377,6 +381,8 @@
   ],
   "settings": {
     "backofficeDateTimeFormat": "m/d/Y H:i:s O",
+    "labels_en": "",
+    "labels_en_nz": "",
     "extendedPropertiesEnabled": false,
     "extendedPropertyParameters": "",
     "isCvvSuppressed": false,
@@ -837,6 +843,75 @@
       "validPageTypes": [
         "*"
       ]
+    },
+    {
+      "defaultConfig": {
+        "topic": "",
+        "question1": "",
+        "answer1": "",
+        "question2": "",
+        "answer2": "",
+        "question3": "",
+        "answer3": ""
+      },
+      "displayName": "FAQSection",
+      "displayTemplate": "faqsection",
+      "editViewFields": [
+        {
+          "anchor": "100%",
+          "fieldLabel": "Topic",
+          "name": "topic",
+          "xtype": "mz-input-text"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Question 1",
+          "name": "question1",
+          "xtype": "mz-input-text"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Answer 1",
+          "name": "answer1",
+          "xtype": "mz-input-richtext"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Question 2",
+          "name": "question2",
+          "xtype": "mz-input-text"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Answer 2",
+          "name": "answer2",
+          "xtype": "taco-htmleditor"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Question 3",
+          "name": "question3",
+          "xtype": "mz-input-text"
+        },
+        {
+          "anchor": "100%",
+          "fieldLabel": "Answer 3",
+          "name": "answer3",
+          "xtype": "mz-input-text"
+        }
+      ],
+      "icon": "/resources/admin/widgets/08_video.png",
+      "id": "faqsection",
+      "validPageTypes": [
+        "*"
+      ]
+    },
+    {
+      "displayName": "FAQToc",
+      "displayTemplate": "faqtoc",
+      "icon": "/resources/admin/widgets/08_video.png",
+      "id": "faq-toc",
+      "validPageTypes": ["*"]
     },
     {
       "defaultConfig": {

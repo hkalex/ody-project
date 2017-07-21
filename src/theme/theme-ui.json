@@ -243,6 +243,32 @@
                     "allowBlank": false
                 }
             ]
+        },
+        {
+            "xtype": "panel",
+            "title": "labels_en",
+            "collapsed": false,
+            "items": [
+                {
+                    "xtype": "mz-input-textarea",
+                    "width": "100%",
+                    "name": "labels_en",
+                    "fieldLabel": "Labels-en"
+                }
+            ]
+        },
+        {
+            "xtype": "panel",
+            "title": "labels_en_nz",
+            "collapsed": false,
+            "items": [
+                {
+                    "xtype": "mz-input-textarea",
+                    "width": "100%",
+                    "name": "labels_en_nz",
+                    "fieldLabel": "Labels-en-nz"
+                }
+            ]
         }
     ]
 }

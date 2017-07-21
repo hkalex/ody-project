@@ -1,0 +1,16 @@
+<h1>FAQ TOC</h1>
+<ul>
+{% if pageModel.properties.dropzones %}
+{%   for dz in pageModel.properties.dropzones %}
+{%     for row in dz.rows %}
+{%       for col in row.columns %}
+{%         for widget in col.widgets %}
+{%           if widget.definitionId == "faqsection" %}
+<li>{{widget.config.topic}}</li>
+{%           endif %}
+{%         endfor %}
+{%       endfor %}
+{%     endfor %}
+{%  endfor %}
+{% endif %}
+<ul>

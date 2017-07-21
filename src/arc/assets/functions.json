@@ -6,9 +6,14 @@
       "actionId": "embedded.platform.applications.install"
     },
     {
-      "id": "hello_custom_routing",
+      "id": "global_request_after",
       "virtualPath": "./dist/storefront.manifest.all.js",
-      "actionId": "http.storefront.routes"
+      "actionId": "http.storefront.pages.global.request.after"
+    },
+    {
+      "id": "cmspage_request_after",
+      "virtualPath": "./dist/storefront.manifest.all.js",
+      "actionId": "http.storefront.pages.cmspage.request.after"
     },
     {
       "id": "read_configuration",

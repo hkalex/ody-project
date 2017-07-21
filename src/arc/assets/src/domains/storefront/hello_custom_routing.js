@@ -22,9 +22,5 @@
  */
 
 module.exports = function(context, callback) {
-  var json = {
-    "mykey": "my-value"
-  };
-  context.response.body = JSON.stringify(json);
   callback();
 };

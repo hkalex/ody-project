@@ -1,0 +1,25 @@
+<div>
+  <h2>{{Model.config.topic}}</h2>
+  <ul>
+    {% if Model.config.question1 %}
+    <li>
+      <div>{{Model.config.question1}}</div>
+      <div>
+      {{ Model.config.answer1 | safe }}
+      </div>
+    </li>
+    {% endif %}
+    {% if Model.config.question2 %}
+    <li>
+      <div>{{Model.config.question2}}</div>
+      <div>{{Model.config.answer2}}</div>
+    </li>
+    {% endif %}
+    {% if Model.config.question3 %}
+    <li>
+      <div>{{Model.config.question3}}</div>
+      <div>{{Model.config.answer3}}</div>
+    </li>
+    {% endif %}
+  </ul>
+</div>
